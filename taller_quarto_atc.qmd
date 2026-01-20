@@ -9,7 +9,6 @@ format:
   html:
     toc: true
     theme: minty
-    title-block-banner-color: black
 output-file: index.html
 lang: es
 execute:
