@@ -1,0 +1,9 @@
+project:
+  title: "taller_quarto_atc"
+  output-dir: "docs"
+
+language: 
+  title-block-author-single: "Autora"
+
+
+
