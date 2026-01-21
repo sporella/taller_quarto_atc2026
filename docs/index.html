@@ -94,7 +94,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#bibliografía" id="toc-bibliografía" class="nav-link" data-scroll-target="#bibliografía">Bibliografía</a></li>
   <li><a href="#parametrización" id="toc-parametrización" class="nav-link" data-scroll-target="#parametrización">Parametrización</a></li>
   </ul></li>
-  <li><a href="#cambiar-formatos-de-salida" id="toc-cambiar-formatos-de-salida" class="nav-link" data-scroll-target="#cambiar-formatos-de-salida">Cambiar formatos de salida</a></li>
+  <li><a href="#cambiar-formatos-de-salida" id="toc-cambiar-formatos-de-salida" class="nav-link" data-scroll-target="#cambiar-formatos-de-salida">Cambiar formatos de salida</a>
+  <ul class="collapse">
+  <li><a href="#html-word-y-pdf" id="toc-html-word-y-pdf" class="nav-link" data-scroll-target="#html-word-y-pdf">HTML, Word y PDF</a></li>
+  <li><a href="#presentaciones" id="toc-presentaciones" class="nav-link" data-scroll-target="#presentaciones">Presentaciones</a></li>
+  <li><a href="#sitios-web-y-otros" id="toc-sitios-web-y-otros" class="nav-link" data-scroll-target="#sitios-web-y-otros">Sitios Web y otros</a></li>
+  </ul></li>
   <li><a href="#buenas-prácticas" id="toc-buenas-prácticas" class="nav-link" data-scroll-target="#buenas-prácticas">Buenas prácticas</a></li>
   </ul>
 </nav>
@@ -224,7 +229,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="uso-científico">Uso científico</h2>
 <section id="agregar-datos-desde-r-a-texto" class="level3">
 <h3 class="anchored" data-anchor-id="agregar-datos-desde-r-a-texto">Agregar datos desde R a texto</h3>
-<p>Se hace usando la expresión en cualquier parte del texto. Podemos también usar funciones cortas dentro del código en línea para ayudarnos a dar un mejor formato.</p>
+<p>Se hace usando la expresión en cualquier parte del texto.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="st">`</span><span class="at">r mi_expresion</span><span class="st">`</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -303,6 +308,8 @@ Figura&nbsp;1: Muestra la dispersión entre Sepal.Length y Petal.Length para var
 <h2 class="anchored" data-anchor-id="cambiar-formatos-de-salida">Cambiar formatos de salida</h2>
 <p>Un mismo documento de cuarto puede generar varios formatos de salida, esto se configura en el YAML.</p>
 <p><a href="https://quarto.org/docs/output-formats/all-formats.html">Acá</a> hay un listado de todos los formatos de salida que se pueden generar.</p>
+<section id="html-word-y-pdf" class="level3">
+<h3 class="anchored" data-anchor-id="html-word-y-pdf">HTML, Word y PDF</h3>
 <p>En nuestro caso, los más comunes serán <code>html</code> para artículos web, <code>docx</code> para manuscritos y <code>pdf</code> para artículos (para generar pdfs prefiero usar <code>typst</code> porque con el generador por defecto me aparecen algunos errores en mi computador).</p>
 <p>Cada formato de salida puede tener sus propias opciones:</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
@@ -317,15 +324,21 @@ Figura&nbsp;1: Muestra la dispersión entre Sepal.Length y Petal.Length para var
 <span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">columns</span><span class="kw">:</span><span class="at"> </span><span class="dv">2</span></span>
 <span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span>
 <span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li><p>También podemos generar presentaciones en PowerPoint (usando <code>format: pptx</code>) y presentaciones web (usando <code>format: revealjs</code>), también existen otros formatos. Recomiendo mucho hacer proyectos separados para lo que es un artículo de lo que va en una peresentación, ya que la presentación debe ser más atractiva y con menos texto.</p></li>
-<li><p>Con Quarto también podemos crear sitios web, blogs, libros, etc. los cuales podemos empezar desde 0 al elegir un tipo de proyecto en el panel inicial en Positron.</p></li>
-</ul>
+</section>
+<section id="presentaciones" class="level3">
+<h3 class="anchored" data-anchor-id="presentaciones">Presentaciones</h3>
+<p>También podemos generar presentaciones en PowerPoint (usando <code>format: pptx</code>) y presentaciones web (usando <code>format: revealjs</code>), también existen otros formatos. Recomiendo mucho hacer proyectos separados para lo que es un artículo de lo que va en una peresentación, ya que la presentación debe ser más atractiva y con menos texto.</p>
+</section>
+<section id="sitios-web-y-otros" class="level3">
+<h3 class="anchored" data-anchor-id="sitios-web-y-otros">Sitios Web y otros</h3>
+<p>Con Quarto también podemos crear sitios web, blogs, libros, etc. los cuales podemos empezar desde 0 al elegir un tipo de proyecto en el panel inicial en Positron.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/p4.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
+<p><a href="https://drganghe.github.io/quarto-academic-site-examples.html">Acá dejo un listado compilado por Gang He</a> de sitios web académicos que se encuentran disponibles en GitHub y que puedes tomar como inspiración.</p>
+</section>
 </section>
 <section id="buenas-prácticas" class="level2">
 <h2 class="anchored" data-anchor-id="buenas-prácticas">Buenas prácticas</h2>

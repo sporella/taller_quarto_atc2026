@@ -102,7 +102,7 @@ Bajo ningún punto utilizar en ninguna parte del proyecto rutas absolutas estilo
 
 ### Agregar datos desde R a texto
 
-Se hace usando la expresión en cualquier parte del texto. Podemos también usar funciones cortas dentro del código en línea para ayudarnos a dar un mejor formato.
+Se hace usando la expresión en cualquier parte del texto.
 
 ```{r}
 #| eval: false
@@ -189,6 +189,8 @@ Un mismo documento de cuarto puede generar varios formatos de salida, esto se co
 
 [Acá](https://quarto.org/docs/output-formats/all-formats.html) hay un listado de todos los formatos de salida que se pueden generar.
 
+### HTML, Word y PDF
+
 En nuestro caso, los más comunes serán `html` para artículos web, `docx` para manuscritos y `pdf` para artículos (para generar pdfs prefiero usar `typst` porque con el generador por defecto me aparecen algunos errores en mi computador).
 
 Cada formato de salida puede tener sus propias opciones:
@@ -208,11 +210,18 @@ bibliography: references.bib
 ---
 ```
 
--   También podemos generar presentaciones en PowerPoint (usando `format: pptx`) y presentaciones web (usando `format: revealjs`), también existen otros formatos. Recomiendo mucho hacer proyectos separados para lo que es un artículo de lo que va en una peresentación, ya que la presentación debe ser más atractiva y con menos texto.
+### Presentaciones
 
--   Con Quarto también podemos crear sitios web, blogs, libros, etc. los cuales podemos empezar desde 0 al elegir un tipo de proyecto en el panel inicial en Positron.
+También podemos generar presentaciones en PowerPoint (usando `format: pptx`) y presentaciones web (usando `format: revealjs`), también existen otros formatos. Recomiendo mucho hacer proyectos separados para lo que es un artículo de lo que va en una peresentación, ya que la presentación debe ser más atractiva y con menos texto.
+
+### Sitios Web y otros
+
+Con Quarto también podemos crear sitios web, blogs, libros, etc. los cuales podemos empezar desde 0 al elegir un tipo de proyecto en el panel inicial en Positron.
 
 ![](images/p4.png){fig-align="center"}
+
+[Acá dejo un listado compilado por Gang He](https://drganghe.github.io/quarto-academic-site-examples.html) de sitios web académicos que se encuentran disponibles en GitHub y que puedes tomar como inspiración.
+
 
 ## Buenas prácticas
 
